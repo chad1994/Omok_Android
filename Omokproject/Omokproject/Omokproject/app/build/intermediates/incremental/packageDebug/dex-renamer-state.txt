@@ -1,0 +1,7 @@
+#Sun Nov 20 19:37:12 KST 2016
+base.0=C\:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_257dddec2a1a91ed13115def698b149687b71040
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_903bc9a75360e9dd8f9dd38ea20aca9bd33b1ffd\\classes.dex
+base.1=C\:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_903bc9a75360e9dd8f9dd38ea20aca9bd33b1ffd
+file.0=C\:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_257dddec2a1a91ed13115def698b149687b71040\\classes.dex
