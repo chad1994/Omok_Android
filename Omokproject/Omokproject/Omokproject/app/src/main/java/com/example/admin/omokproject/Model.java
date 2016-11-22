@@ -1,6 +1,9 @@
 package com.example.admin.omokproject;
 
 import android.app.AlertDialog;
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.util.Log;
 
 /**
@@ -8,6 +11,7 @@ import android.util.Log;
  */
 
 public class Model {
+
     /////////////////////////////////////////////////변수 선언
     private int map[][] = new int[13][13]; //맵 배열
     public int White_Stone =1 ;
@@ -24,8 +28,12 @@ public class Model {
     public boolean whitewinstate = false;
     public boolean blackwinstate = false;
     public boolean threadstate=false;
-    public int B_time=30;
-    public int W_time=30;
+    public int B_time=10;
+    public int W_time=10;
+
+//    SoundPool backgroundmusic = new SoundPool(1, AudioManager.STREAM_MUSIC,0);
+//    int sound= backgroundmusic.load(VersusActivity.context,R.raw.bgm,1);
+//    int streamID = backgroundmusic.play(sound, 1.0F, 1.0F,  1,  -1,  1.0F);
 
     public void setMap(int value,int i,int j){
         this.map[i][j] = value;

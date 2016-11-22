@@ -5,33 +5,46 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="710620970835195"
-    token="3222331239792960516"
-    verifier="FULL_BUILD_REQUESTED" >
+    timestamp="92956666771931"
+    token="-7568026223488580986"
+    verifier="R_CLASS_CHANGE" >
 
     <task
         name="javac"
-        duration="133" />
+        duration="211" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="22" />
+        duration="9" />
     <task
         name="verifier"
         duration="2" />
 
     <artifact
-        location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="710620970835195"
+        timestamp="92668841458969"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="92956666771931"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

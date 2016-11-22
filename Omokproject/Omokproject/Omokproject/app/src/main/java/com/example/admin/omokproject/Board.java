@@ -21,8 +21,9 @@ import android.widget.Toast;
  */
 
 public class Board extends View implements View.OnTouchListener {
+    Context context;
     Model model = new Model();
-
+    //TimeThread thread;
     private Bitmap bgimage,playerbar_W,playerbar_B,whiteplayer,blackplayer;
     private Bitmap whitestoneimage, blackstoneimage,reverseitemicon,timeitemicon;
     private Bitmap whitewinimage,blackwinimage;
@@ -31,13 +32,14 @@ public class Board extends View implements View.OnTouchListener {
 
     public Board(Context context, Model model) {
         super(context);
+        this.context=context;
         this.model = model;
         model.initmap();//맵 배열 초기화 (0값)
         //setBackgroundColor(Color.WHITE);
 
         Resources r = context.getResources();
         bgimage = BitmapFactory.decodeResource(r, R.drawable.badukpan);
-        bgimage = Bitmap.createScaledBitmap(bgimage,1200,1200,true);
+        bgimage = Bitmap.createScaledBitmap(bgimage,1300,1300,true);
         whitestoneimage = BitmapFactory.decodeResource(r, R.drawable.whitestone);
         blackstoneimage = BitmapFactory.decodeResource(r, R.drawable.blackstone);
         whitewinimage =BitmapFactory.decodeResource(r,R.drawable.whitewin);
@@ -70,7 +72,7 @@ public class Board extends View implements View.OnTouchListener {
     public void onDraw(Canvas canvas) {
         Paint paint = new Paint();
         /////////////////////////////////////////////배둑판 배경그리기
-            canvas.drawBitmap(bgimage, 150, 100, null);
+            canvas.drawBitmap(bgimage, 100, 50, null);
         ////////////////////////////////////////////플레이어 바 그리기
         if(model.turn_count%2==1){
             canvas.drawBitmap(playerbar_W,50,1350,null);
@@ -81,7 +83,7 @@ public class Board extends View implements View.OnTouchListener {
         paint.setTextSize(60);
         canvas.drawText("Player1",120,1470,paint);
         canvas.drawText("Player2",1150,1470,paint);
-        canvas.drawText("time:"+model.B_time,120,1550,paint);
+
         canvas.drawBitmap(whitestoneimage,330,1410,null);
         canvas.drawBitmap(blackstoneimage,1050,1410,null);
         if(model.getW_turnitem()==1){
@@ -104,7 +106,7 @@ public class Board extends View implements View.OnTouchListener {
         //canvas.drawLine(150,100,1350,100,paint);
 
         ///////////////////////////////////////////////바둑판 선 그리기
-        paint.setStrokeWidth(2);//선 굵기
+        paint.setStrokeWidth(3);//선 굵기
         for (int i = 0; i < 13; i++) {
             canvas.drawLine(150, (i + 1) * 100, 1350, (i + 1) * 100, paint);
             canvas.drawLine(((i + 1) * 100) + 50, 100, ((i + 1) * 100) + 50, 1300, paint);
@@ -150,7 +152,15 @@ public class Board extends View implements View.OnTouchListener {
         canvas.drawBitmap(reverseimage,225,1600,paint);
         //canvas.drawBitmap(surrenderimage,600,1600,paint);
         canvas.drawBitmap(timeitemimage,975,1600,paint);
-
+        //////////////////////////////////////////남은 시간 그리기
+        if(model.getW_timeitem()==1&&model.turn_count%2==0)
+            canvas.drawText("흑돌 남은 시간:"+model.B_time,600,50,paint);
+        if(model.getB_timeitem()==1&&model.turn_count%2==1)
+            canvas.drawText("백돌 남은 시간:"+model.W_time,600,50,paint);
+        if(model.getW_timeitem()==1&&model.turn_count%2==1)
+            canvas.drawText("백돌 시간제한 아이템 사용",500,50,paint);
+        if(model.getB_timeitem()==1&&model.turn_count%2==0)
+            canvas.drawText("흑돌 시간제한 아이템 사용",500,50,paint);
 
         //fragment 해보기! 11.17
         super.onDraw(canvas);
@@ -174,6 +184,11 @@ public class Board extends View implements View.OnTouchListener {
                                 model.threadstate=true;
                                 th.start();
                             }
+                            if(model.getB_timeitem()==1){
+                                model.threadstate=false;
+                                model.W_time=10;
+                                model.setB_timeitem(0);
+                            }
                             invalidate();
 
                         }
@@ -183,9 +198,14 @@ public class Board extends View implements View.OnTouchListener {
                             model.setBlack_X(i);
                             model.setBlack_Y(j);
                             model.turn_count++;
+                            if(model.getB_timeitem()==1){
+                                TimeThread th = new TimeThread(model,this);
+                                model.threadstate=true;
+                                th.start();
+                            }
                             if(model.getW_timeitem()==1){
                                 model.threadstate=false;
-                                model.B_time=30;
+                                model.B_time=10;
                                 model.setW_timeitem(0);
                             }
                             invalidate();
@@ -212,7 +232,6 @@ public class Board extends View implements View.OnTouchListener {
         if((X>225&&X<525)&&(Y>1600&&Y<1700)) {
             if(model.whitewinstate==false&&model.blackwinstate==false) {
                 model.reverseturn();
-
                 invalidate();
             }
         }

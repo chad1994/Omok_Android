@@ -1,5 +1,8 @@
 package com.example.admin.omokproject;
 
+import android.content.Context;
+import android.content.res.Resources;
+
 /**
  * Created by admin on 2016-11-20.
  */
@@ -7,6 +10,7 @@ package com.example.admin.omokproject;
 public class TimeThread extends Thread implements Runnable{
     Model model;
     Board board;
+
 
     TimeThread(Model model, Board board){
         this.model=model;
@@ -33,7 +37,7 @@ public class TimeThread extends Thread implements Runnable{
                     }
                     model.B_time--;
                 }
-                board.invalidate();
+                board.postInvalidate();
 
                 }catch(InterruptedException e){
                     e.printStackTrace();

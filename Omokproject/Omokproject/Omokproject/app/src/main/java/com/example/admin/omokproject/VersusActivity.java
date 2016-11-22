@@ -1,6 +1,7 @@
 package com.example.admin.omokproject;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -12,9 +13,13 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.sql.Time;
+
 public class VersusActivity extends AppCompatActivity {
+    public static Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        context=this;
         super.onCreate(savedInstanceState);
         Model model = new Model();
         Board board = new Board(this,model);
