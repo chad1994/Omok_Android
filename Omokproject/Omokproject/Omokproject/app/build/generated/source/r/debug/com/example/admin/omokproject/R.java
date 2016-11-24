@@ -1802,10 +1802,10 @@ containing a value of this type.
     public static final class id {
         public static final int ExitButton=0x7f0c0059;
         public static final int SettingButton=0x7f0c0058;
-        public static final int SurrenderButton=0x7f0c0060;
+        public static final int SurrenderButton=0x7f0c005e;
         public static final int Title2=0x7f0c0056;
         public static final int VersusButton=0x7f0c0057;
-        public static final int action0=0x7f0c0061;
+        public static final int action0=0x7f0c005f;
         public static final int action_bar=0x7f0c0045;
         public static final int action_bar_activity_content=0x7f0c0000;
         public static final int action_bar_container=0x7f0c0044;
@@ -1814,7 +1814,7 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0c0025;
         public static final int action_bar_title=0x7f0c0024;
         public static final int action_context_bar=0x7f0c0046;
-        public static final int action_divider=0x7f0c0065;
+        public static final int action_divider=0x7f0c0063;
         public static final int action_menu_divider=0x7f0c0002;
         public static final int action_menu_presenter=0x7f0c0003;
         public static final int action_mode_bar=0x7f0c0042;
@@ -1823,17 +1823,17 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f0c0027;
         public static final int activity_main=0x7f0c0054;
         public static final int activity_setting=0x7f0c005a;
-        public static final int activity_versusmode=0x7f0c005e;
+        public static final int activity_versusmode=0x7f0c005c;
         public static final int add=0x7f0c0013;
         public static final int alertTitle=0x7f0c0033;
         public static final int always=0x7f0c001d;
         public static final int beginning=0x7f0c001a;
-        public static final int boardlayout=0x7f0c005f;
+        public static final int boardlayout=0x7f0c005d;
         public static final int bottom=0x7f0c0022;
         public static final int buttonPanel=0x7f0c002e;
-        public static final int cancel_action=0x7f0c0062;
+        public static final int cancel_action=0x7f0c0060;
         public static final int checkbox=0x7f0c003c;
-        public static final int chronometer=0x7f0c0068;
+        public static final int chronometer=0x7f0c0066;
         public static final int collapseActionView=0x7f0c001e;
         public static final int contentPanel=0x7f0c0034;
         public static final int custom=0x7f0c003a;
@@ -1843,7 +1843,7 @@ containing a value of this type.
         public static final int disableHome=0x7f0c000c;
         public static final int edit_query=0x7f0c0047;
         public static final int end=0x7f0c001b;
-        public static final int end_padder=0x7f0c006d;
+        public static final int end_padder=0x7f0c006b;
         public static final int expand_activities_button=0x7f0c0028;
         public static final int expanded_menu=0x7f0c003b;
         public static final int home=0x7f0c0004;
@@ -1853,12 +1853,12 @@ containing a value of this type.
         public static final int image=0x7f0c0029;
         public static final int imageView=0x7f0c005b;
         public static final int imageView2=0x7f0c0055;
-        public static final int info=0x7f0c006c;
-        public static final int line1=0x7f0c0066;
-        public static final int line3=0x7f0c006a;
+        public static final int info=0x7f0c006a;
+        public static final int line1=0x7f0c0064;
+        public static final int line3=0x7f0c0068;
         public static final int listMode=0x7f0c0009;
         public static final int list_item=0x7f0c002b;
-        public static final int media_actions=0x7f0c0064;
+        public static final int media_actions=0x7f0c0062;
         public static final int middle=0x7f0c001c;
         public static final int multiply=0x7f0c0014;
         public static final int never=0x7f0c0020;
@@ -1892,16 +1892,14 @@ containing a value of this type.
         public static final int src_atop=0x7f0c0016;
         public static final int src_in=0x7f0c0017;
         public static final int src_over=0x7f0c0018;
-        public static final int status_bar_latest_event_content=0x7f0c0063;
+        public static final int status_bar_latest_event_content=0x7f0c0061;
         public static final int submenuarrow=0x7f0c003f;
         public static final int submit_area=0x7f0c0050;
-        public static final int switch1=0x7f0c005c;
-        public static final int switch2=0x7f0c005d;
         public static final int tabMode=0x7f0c000b;
-        public static final int text=0x7f0c006b;
-        public static final int text2=0x7f0c0069;
+        public static final int text=0x7f0c0069;
+        public static final int text2=0x7f0c0067;
         public static final int textSpacerNoButtons=0x7f0c0037;
-        public static final int time=0x7f0c0067;
+        public static final int time=0x7f0c0065;
         public static final int title=0x7f0c002d;
         public static final int title_template=0x7f0c0032;
         public static final int top=0x7f0c0023;
@@ -1966,6 +1964,12 @@ containing a value of this type.
     }
     public static final class raw {
         public static final int bgm=0x7f060000;
+        public static final int bye=0x7f060001;
+        public static final int click=0x7f060002;
+        public static final int start=0x7f060003;
+        public static final int startdaeguk=0x7f060004;
+        public static final int stonesound=0x7f060005;
+        public static final int win=0x7f060006;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f070000;

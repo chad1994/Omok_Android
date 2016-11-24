@@ -5,43 +5,37 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="92956666771931"
+    timestamp="254084639513372"
     token="-7568026223488580986"
-    verifier="R_CLASS_CHANGE" >
+    verifier="FIELD_REMOVED" >
 
     <task
         name="javac"
-        duration="211" />
+        duration="146" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="9" />
+        duration="43" />
     <task
         name="verifier"
-        duration="2" />
+        duration="5" />
 
-    <artifact
-        location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
     <artifact
         location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="92668841458969"
+        timestamp="253612896261232"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="92956666771931"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
+        timestamp="254084639513372"
+        verifier="FIELD_REMOVED" >
         <artifact
             location="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />

@@ -2,6 +2,15 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_e4b4f99094cb6a413f59c397135b6c5e08ec016f.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
         jumboMode="true"
@@ -16,8 +25,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="7605a518e39aa92dbc65535684a19df9ca5d5ad8">
+        sha1="e276bc3c41e71d44f7aa25cf9ec49271e8b647a2">
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_257dddec2a1a91ed13115def698b149687b71040\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_df669b9fb9032cb79f6c93ce6f3c630873f19f8b.jar" />
     </item>
     <item
         is-multidex="true"
@@ -38,6 +56,15 @@
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_718488b16a688a866c59945fd94f9f15161ca62b\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_f0f4295d1e57852c4a826b75da56d1391951bc83.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
@@ -54,6 +81,24 @@
         revision="25.0.0"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_be71506f4ef4be7a5a2a7ffb382f16521f7d0cfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_8aa1e8e6e8669512eb125a244e0c1c2dae4d6ab4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_be71506f4ef4be7a5a2a7ffb382f16521f7d0cfb.jar" />
     </item>
     <item
         is-multidex="true"
@@ -74,6 +119,24 @@
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e4b4f99094cb6a413f59c397135b6c5e08ec016f\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c09f8c77744d5087194c8cdc659e615794f2565f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_1a938754f561484769c08da5394b88271d01be2a.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
@@ -81,6 +144,33 @@
         revision="25.0.0"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_9bd8e262f96107ac1b1ea74a992202e192f62afe\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_9bd8e262f96107ac1b1ea74a992202e192f62afe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_07349959793a12e255cac8a1dcde47eb0b8931e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_6264ea809253f4980786a11a17f9c9d97afe6422.jar" />
     </item>
     <item
         is-multidex="true"
@@ -106,8 +196,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3ba895b1a5b05a12c72ab7bf581def991e2fbb1e">
+        sha1="f19db983cf5d1a5f52a9b6a9ed5a33527ffd74ed">
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_903bc9a75360e9dd8f9dd38ea20aca9bd33b1ffd\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_3eca2d7d24c59561baf1320f4d05447a19e167c1.jar" />
     </item>
     <item
         is-multidex="true"
@@ -119,6 +218,15 @@
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_f0f4295d1e57852c4a826b75da56d1391951bc83\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_718488b16a688a866c59945fd94f9f15161ca62b.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
@@ -126,6 +234,24 @@
         revision="25.0.0"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_4f36f357fbf1be15531f93f3b829ddfbd30d268c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_4f36f357fbf1be15531f93f3b829ddfbd30d268c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_538725faf1c8c8ce57c97b611efdf4725ee543e4.jar" />
     </item>
     <item
         is-multidex="true"
@@ -153,6 +279,15 @@
         revision="25.0.0"
         sha1="d5c731fc64c03dfe04d51134955b483551c35849">
         <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_538725faf1c8c8ce57c97b611efdf4725ee543e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\admin\Desktop\jyworkspaceAnd\Omokproject\Omokproject\Omokproject\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_902b9fe2c3357a4295f07f9eacf5b21638825755.jar" />
     </item>
 
 </items>

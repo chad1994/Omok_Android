@@ -1,4 +1,4 @@
-#Wed Nov 23 01:25:58 KST 2016
+#Thu Nov 24 22:08:13 KST 2016
 base.0=C\:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_257dddec2a1a91ed13115def698b149687b71040
 renamed.1=classes.dex
 renamed.0=classes2.dex

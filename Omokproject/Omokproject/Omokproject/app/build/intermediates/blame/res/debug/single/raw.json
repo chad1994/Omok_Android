@@ -1,6 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\bgm.wav",
-        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\bgm.wav"
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\bye.wav",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\bye.wav"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\bgm.ogg",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\bgm.ogg"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\stonesound.ogg",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\stonesound.ogg"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\start.ogg",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\start.ogg"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\win.wav",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\win.wav"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\click.ogg",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\click.ogg"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\raw\\startdaeguk.ogg",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\src\\main\\res\\raw\\startdaeguk.ogg"
     }
 ]

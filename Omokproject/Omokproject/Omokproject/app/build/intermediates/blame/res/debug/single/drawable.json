@@ -92,12 +92,12 @@
         "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "C:\\Users\\admin\\Desktop\\jyworkspaceAnd\\Omokproject\\Omokproject\\Omokproject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",

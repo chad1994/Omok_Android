@@ -11,30 +11,18 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.admin.omokproject.MainActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:gravity="center"
+    android:background="@android:color/darker_gray">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="643dp"
         app:srcCompat="@drawable/guidebackground"
         android:id="@+id/imageView"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.43" />
 
-    <Switch
-        android:text="background sound"
-        android:layout_width="547dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:id="@+id/switch1"
-        android:layout_weight="0.07" />
-
-    <Switch
-        android:text="Effect sound"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-
-        android:id="@+id/switch2"
-        android:layout_weight="0.07"
-        android:layout_width="547dp" />
 
 </LinearLayout>

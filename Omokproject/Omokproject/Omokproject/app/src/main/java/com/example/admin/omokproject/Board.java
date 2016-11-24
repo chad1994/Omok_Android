@@ -2,6 +2,7 @@ package com.example.admin.omokproject;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -35,6 +36,7 @@ public class Board extends View implements View.OnTouchListener {
         this.context=context;
         this.model = model;
         model.initmap();//맵 배열 초기화 (0값)
+        model.loadsound();
         //setBackgroundColor(Color.WHITE);
 
         Resources r = context.getResources();
@@ -72,31 +74,30 @@ public class Board extends View implements View.OnTouchListener {
     public void onDraw(Canvas canvas) {
         Paint paint = new Paint();
         /////////////////////////////////////////////배둑판 배경그리기
-            canvas.drawBitmap(bgimage, 100, 50, null);
+        canvas.drawBitmap(bgimage, 100, 50, null);
         ////////////////////////////////////////////플레이어 바 그리기
-        if(model.turn_count%2==1){
-            canvas.drawBitmap(playerbar_W,50,1350,null);
-        }
-        else if(model.turn_count%2==0){
-            canvas.drawBitmap(playerbar_B,50,1350,null);
+        if (model.turn_count % 2 == 1) {
+            canvas.drawBitmap(playerbar_W, 50, 1350, null);
+        } else if (model.turn_count % 2 == 0) {
+            canvas.drawBitmap(playerbar_B, 50, 1350, null);
         }
         paint.setTextSize(60);
-        canvas.drawText("Player1",120,1470,paint);
-        canvas.drawText("Player2",1150,1470,paint);
+        canvas.drawText(""+model.W_playername, 120, 1470, paint);
+        canvas.drawText(""+model.B_playername, 1150, 1470, paint);
 
-        canvas.drawBitmap(whitestoneimage,330,1410,null);
-        canvas.drawBitmap(blackstoneimage,1050,1410,null);
-        if(model.getW_turnitem()==1){
-            canvas.drawBitmap(reverseitemicon,500,1400,null);
+        canvas.drawBitmap(whitestoneimage, 330, 1410, null);
+        canvas.drawBitmap(blackstoneimage, 1050, 1410, null);
+        if (model.getW_turnitem() == 1) {
+            canvas.drawBitmap(reverseitemicon, 500, 1400, null);
         }
-        if(model.getB_turnitem()==1){
-            canvas.drawBitmap(reverseitemicon,900,1400,null);
+        if (model.getB_turnitem() == 1) {
+            canvas.drawBitmap(reverseitemicon, 900, 1400, null);
         }
-        if(model.getW_timeitem()==2){
-            canvas.drawBitmap(timeitemicon,600,1400,null);
+        if (model.getW_timeitem() == 2) {
+            canvas.drawBitmap(timeitemicon, 600, 1400, null);
         }
-        if(model.getB_timeitem()==2){
-            canvas.drawBitmap(timeitemicon,800,1400,null);
+        if (model.getB_timeitem() == 2) {
+            canvas.drawBitmap(timeitemicon, 800, 1400, null);
         }
         //canvas.drawText(String.valueOf(bgimage.getWidth()), 50, 50, paint);
         //canvas.drawText(String.valueOf(bgimage.getHeight()), 50, 70, paint);
@@ -133,7 +134,7 @@ public class Board extends View implements View.OnTouchListener {
         }
         ////////////////////////////////////////////최근 돌 표식찍기
         paint.setColor(Color.RED);
-        if(model.turn_count!=1) { //시작을 제외하고
+        if (model.turn_count != 1) { //시작을 제외하고
             if (model.turn_count % 2 == 1) //검은돌을 놓고 흰색턴이 되었을 때
                 canvas.drawCircle(model.getBlack_X() * 100 + 150, model.getBlack_Y() * 100 + 100, 10, paint);
             else if (model.turn_count % 2 == 0) { //흰돌을 놓고 검은색턴이 되었을 때
@@ -143,10 +144,13 @@ public class Board extends View implements View.OnTouchListener {
         ////////////////////////////////////////////승리 도장
         if (model.whitewinstate == true) {
             canvas.drawBitmap(whitewinimage, 250, 200, paint);
-
+            model.playwinsound();
         }
-        if(model.blackwinstate == true)
-            canvas.drawBitmap(blackwinimage,250,200,paint);
+        if (model.blackwinstate == true){
+            canvas.drawBitmap(blackwinimage, 250, 200, paint);
+            model.playwinsound();
+        }
+
 
         ///////////////////////////////////////////아이템 그리기
         canvas.drawBitmap(reverseimage,225,1600,paint);
@@ -174,10 +178,11 @@ public class Board extends View implements View.OnTouchListener {
             for (int j = 0; j < 13; j++) {
                 if ((X > (100 + i * 100) && X < 100 + (i + 1) * 100) && (Y > (50 + j * 100) && Y < (50 + (j + 1) * 100))) {   // 좌표임계 범위에 배열값에 값넣기
                     if (model.turn_count % 2 == 1) { //백돌의 차례일 때
-                        if (model.getMap(i, j) == 0&&model.blackwinstate==false) { //빈칸이고 상대가 승리하지 않았을때
+                        if (model.getMap(i, j) == 0&&model.blackwinstate==false&&model.whitewinstate==false) { //빈칸이고 상대가 승리하지 않았을때
                             model.setMap(1, i, j);
                             model.setWhite_X(i);
                             model.setWhite_Y(j);
+                            model.playstonesound();
                             model.turn_count++;
                             if(model.getW_timeitem()==1){
                                 TimeThread th = new TimeThread(model,this);
@@ -193,10 +198,11 @@ public class Board extends View implements View.OnTouchListener {
 
                         }
                     } else if (model.turn_count % 2 == 0) {
-                        if (model.getMap(i, j) == 0&&model.whitewinstate==false) {
+                        if (model.getMap(i, j) == 0&&model.whitewinstate==false&&model.blackwinstate==false) {
                             model.setMap(2, i, j);
                             model.setBlack_X(i);
                             model.setBlack_Y(j);
+                            model.playstonesound();
                             model.turn_count++;
                             if(model.getB_timeitem()==1){
                                 TimeThread th = new TimeThread(model,this);
@@ -232,22 +238,27 @@ public class Board extends View implements View.OnTouchListener {
         if((X>225&&X<525)&&(Y>1600&&Y<1700)) {
             if(model.whitewinstate==false&&model.blackwinstate==false) {
                 model.reverseturn();
+                model.playclicksound();
                 invalidate();
             }
         }
 
         if((X>975&&X<1275)&&(Y>1600&&Y<1700)){
             if(model.turn_count%2==1){
-                if(model.getW_timeitem()==2){
+                if(model.getW_timeitem()==2&&model.whitewinstate==false&&model.blackwinstate==false){
                     model.setW_timeitem(1);
+                    model.playclicksound();
+                    invalidate();
                 }
             }
             else if(model.turn_count%2==0){
-                if(model.getB_timeitem()==2){
+                if(model.getB_timeitem()==2&&model.whitewinstate==false&&model.blackwinstate==false){
                     model.setB_timeitem(1);
+                    model.playclicksound();
+                    invalidate();
                 }
             }
-            invalidate();
+
         }
 
 

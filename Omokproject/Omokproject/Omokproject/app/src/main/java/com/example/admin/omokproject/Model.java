@@ -2,7 +2,9 @@ package com.example.admin.omokproject;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.util.Log;
 
@@ -30,10 +32,34 @@ public class Model {
     public boolean threadstate=false;
     public int B_time=10;
     public int W_time=10;
+    public String W_playername;
+    public String B_playername;
 
-//    SoundPool backgroundmusic = new SoundPool(1, AudioManager.STREAM_MUSIC,0);
-//    int sound= backgroundmusic.load(VersusActivity.context,R.raw.bgm,1);
-//    int streamID = backgroundmusic.play(sound, 1.0F, 1.0F,  1,  -1,  1.0F);
+
+    SoundPool soundPool= new SoundPool(5,AudioManager.STREAM_MUSIC,0);
+    public int stonesound,clicksound,win,bye ;
+    public void loadsound(){
+        stonesound = soundPool.load(VersusActivity.context,R.raw.stonesound,1);
+        clicksound = soundPool.load(VersusActivity.context,R.raw.stonesound,1);
+        win = soundPool.load(VersusActivity.context,R.raw.win,1);
+    }
+    public void playstonesound() {
+        soundPool.play(stonesound,1.0f,1.0f,0,0,1.0f);
+    }
+    public void playclicksound(){
+       soundPool.play(clicksound,1.0f,1.0f,0,0,1.0f);
+    }
+    public void playwinsound(){
+        soundPool.play(win,1.0f,1.0f,0,0,1.0f);
+    }
+
+   // SoundPool soundPool = new SoundPool(5, AudioManager.STREAM_MUSIC,0);
+//    public void Playstonesound(){
+//        int sound= soundPool.load(VersusActivity.context,R.raw.stonesound,1);
+//        soundPool.play(sound,1f,1f,0,0,1f);
+//    }
+
+
 
     public void setMap(int value,int i,int j){
         this.map[i][j] = value;
